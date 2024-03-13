@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.MessagesController">
+   <children>
+      <TableView fx:id="tableView" layoutX="6.0" prefHeight="155.0" prefWidth="346.0">
+        <columns>
+          <TableColumn fx:id="tableColumnID" prefWidth="36.3333295583725" text="ID" />
+          <TableColumn fx:id="tableColumnMessage" prefWidth="56.66666793823242" text="Mesaj" />
+            <TableColumn fx:id="tableColumnFrom" prefWidth="36.0" text="From" />
+            <TableColumn fx:id="tableColumnTo" prefWidth="46.333343505859375" text="To" />
+            <TableColumn fx:id="tableColumnReply" prefWidth="42.999969482421875" text="Reply" />
+            <TableColumn fx:id="tableColumnDate" prefWidth="124.66665649414062" text="Data" />
+        </columns>
+      </TableView>
+      <Button fx:id="button_chat" layoutX="240.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleChatButton" prefHeight="25.0" prefWidth="89.0" text="Chat" />
+      <Button layoutX="240.0" layoutY="212.0" mnemonicParsing="false" onAction="#handlerefreshButton" prefHeight="25.0" prefWidth="89.0" text="Refresh" />
+      <TextField fx:id="msg" layoutX="14.0" layoutY="294.0" prefHeight="50.0" prefWidth="182.0" promptText="Mesaj" />
+      <Button layoutX="84.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleSendButton" text="Send" />
+      <Button layoutX="262.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleFriendRequestButton" prefHeight="25.0" prefWidth="149.0" text="Send FriendRequest to:" />
+      <TextField fx:id="userId" layoutX="418.0" layoutY="318.0" promptText="UserId" />
+      <TableView fx:id="tableView1" layoutX="360.0" layoutY="3.0" prefHeight="170.0" prefWidth="221.0">
+         <columns>
+            <TableColumn fx:id="tableColumnID_from" prefWidth="105.33334064483643" text="From" />
+            <TableColumn fx:id="tableColumnstatus" minWidth="0.0" prefWidth="115.3333511352539" text="Status" />
+         </columns>
+      </TableView>
+      <Button layoutX="394.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleAcceptButton" text="Accept" />
+      <Button layoutX="493.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleRejectButton" text="Reject" />
+      <TableView fx:id="tableView11" layoutX="14.0" layoutY="162.0" prefHeight="119.0" prefWidth="182.0">
+         <columns>
+            <TableColumn fx:id="tableColumnID_Friend" prefWidth="180.66667652130127" text="Friend ID" />
+         </columns>
+      </TableView>
+      <Button layoutX="246.0" layoutY="249.0" mnemonicParsing="false" onAction="#handleReplyButton" prefHeight="25.0" prefWidth="83.0" text="Reply" />
+   </children>
+</AnchorPane>

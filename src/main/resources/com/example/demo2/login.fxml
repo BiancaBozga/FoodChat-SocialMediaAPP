@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.LogInController">
+   <children>
+      <PasswordField fx:id="passwd" layoutX="241.0" layoutY="259.0" promptText="Password">
+         <effect>
+            <DropShadow />
+         </effect></PasswordField>
+      <TextField fx:id="user_id" layoutX="241.0" layoutY="208.0" promptText="User ID">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <Button layoutX="280.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleLogInButton" prefHeight="33.0" prefWidth="72.0" text="LogIn" />
+      <Button fx:id="openSecondWindowButton" layoutX="438.0" layoutY="267.0" mnemonicParsing="false" onAction="#handleregisterButton" prefHeight="33.0" prefWidth="113.0" text="Register here!" textFill="#10100f" />
+      <Label layoutX="418.0" layoutY="233.0" prefHeight="25.0" prefWidth="173.0" text="You don't have an account?" textFill="#d72b2b" />
+      <ImageView fitHeight="231.0" fitWidth="173.0" layoutX="48.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@spoon%20fork%20food%20chat%20talk%20bubble%20logo%20template%20.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="208.0" layoutY="40.0" prefHeight="40.0" prefWidth="215.0" text="Welcome to FoodChat!" textFill="#c9b607" underline="true">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+      <Label layoutX="105.0" layoutY="102.0" text=" Where the love for food meets delightful conversations." textFill="#429cff">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label fx:id="warning" layoutX="263.0" layoutY="345.0" prefHeight="17.0" prefWidth="159.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
